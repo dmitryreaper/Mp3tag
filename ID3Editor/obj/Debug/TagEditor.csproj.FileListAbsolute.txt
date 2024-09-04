@@ -1,0 +1,6 @@
+C:\Users\Dmitry\source\repos\id3lib\ID3Editor\obj\Debug\TagEditor.csproj.AssemblyReference.cache
+C:\Users\Dmitry\source\repos\id3lib\ID3Editor\obj\Debug\TagEditor.ID3AdapterEdit.resources
+C:\Users\Dmitry\source\repos\id3lib\ID3Editor\obj\Debug\TagEditor.ID3PowerEdit.resources
+C:\Users\Dmitry\source\repos\id3lib\ID3Editor\obj\Debug\TagEditor.MainForm.resources
+C:\Users\Dmitry\source\repos\id3lib\ID3Editor\obj\Debug\TagEditor.csproj.GenerateResource.cache
+C:\Users\Dmitry\source\repos\id3lib\ID3Editor\obj\Debug\TagEditor.csproj.CoreCompileInputs.cache
