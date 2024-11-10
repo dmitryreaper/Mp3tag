@@ -114,7 +114,7 @@ namespace TagEditor
             }
             catch (Exception ex)
             {
-                Utils.ExceptionMessageBox.Show(ex, "Directory Scan failed.");
+                Utils.ExceptionMessageBox.Show(ex, "Ошибка сканирования директории.");
             }
         }
 
@@ -129,7 +129,7 @@ namespace TagEditor
             }
             catch (Exception e)
             {
-                ExceptionMessageBox.Show(_form, e, "Error Reading Tag");
+                ExceptionMessageBox.Show(_form, e, "Ошибка чтения тега");
                 return;
             }
 
@@ -148,7 +148,7 @@ namespace TagEditor
                 }
                 catch (Exception e)
                 {
-                    ExceptionMessageBox.Show(_form, e, "Error Writing Tag");
+                    ExceptionMessageBox.Show(_form, e, "Ошибка записи тега");
                 }
             }
         }
@@ -164,7 +164,7 @@ namespace TagEditor
             }
             catch (Exception ex)
             {
-                ExceptionMessageBox.Show(_form, ex, "Error Reading Tag");
+                ExceptionMessageBox.Show(_form, ex, "Ошибка чтения тега");
                 return;
             }
 
@@ -194,12 +194,12 @@ namespace TagEditor
                 }
                 catch (Exception e)
                 {
-                    ExceptionMessageBox.Show(_form, e, "Error Writing Tag");
+                    ExceptionMessageBox.Show(_form, e, "Ошибка записи тега");
                 }
             }
             catch (Exception e)
             {
-                ExceptionMessageBox.Show(_form, e, "Error Reading Tag");
+                ExceptionMessageBox.Show(_form, e, "Ошибка чтения тега");
             }
         }
 
@@ -229,12 +229,12 @@ namespace TagEditor
                 }
                 catch( Exception e )
                 {
-                    ExceptionMessageBox.Show(_form, e, "Error Writing Tag");
+                    ExceptionMessageBox.Show(_form, e, "Ошибка записи тега");
                 }
             }
             catch( Exception e )
             {
-                ExceptionMessageBox.Show(_form, e, "Error Reading Tag");
+                ExceptionMessageBox.Show(_form, e, "Ошибка чтения тега");
             }
         }
     }

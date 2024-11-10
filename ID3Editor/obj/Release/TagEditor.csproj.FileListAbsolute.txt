@@ -1,0 +1,17 @@
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\TagEditor.exe.config
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\TagEditor.exe
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\Id3Lib.dll
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\Mp3Lib.dll
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\Utils.dll
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\Id3Lib.pdb
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\Mp3Lib.pdb
+D:\Source\CsharpMusic\id3lib\ID3Editor\bin\Release\Utils.pdb
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.csproj.AssemblyReference.cache
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.ID3AdapterEdit.resources
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.ID3PowerEdit.resources
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.MainForm.resources
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.csproj.GenerateResource.cache
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.csproj.CoreCompileInputs.cache
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.csproj.Up2Date
+D:\Source\CsharpMusic\id3lib\ID3Editor\obj\Release\TagEditor.exe

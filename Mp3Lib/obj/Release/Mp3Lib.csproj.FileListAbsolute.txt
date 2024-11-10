@@ -1,0 +1,10 @@
+D:\Source\CsharpMusic\id3lib\Mp3Lib\bin\Release\Mp3Lib.dll
+D:\Source\CsharpMusic\id3lib\Mp3Lib\bin\Release\Mp3Lib.pdb
+D:\Source\CsharpMusic\id3lib\Mp3Lib\bin\Release\Id3Lib.dll
+D:\Source\CsharpMusic\id3lib\Mp3Lib\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Source\CsharpMusic\id3lib\Mp3Lib\bin\Release\Id3Lib.pdb
+D:\Source\CsharpMusic\id3lib\Mp3Lib\obj\Release\Mp3Lib.csproj.AssemblyReference.cache
+D:\Source\CsharpMusic\id3lib\Mp3Lib\obj\Release\Mp3Lib.csproj.CoreCompileInputs.cache
+D:\Source\CsharpMusic\id3lib\Mp3Lib\obj\Release\Mp3Lib.csproj.Up2Date
+D:\Source\CsharpMusic\id3lib\Mp3Lib\obj\Release\Mp3Lib.dll
+D:\Source\CsharpMusic\id3lib\Mp3Lib\obj\Release\Mp3Lib.pdb

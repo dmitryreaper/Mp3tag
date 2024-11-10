@@ -11,7 +11,7 @@ namespace TagEditor
     public class DirBrowser : FolderNameEditor
     {
         #region Fields
-        private string _description = "Select Directory";
+        private string _description = "Выбрать директорию";
         private string _directory = string.Empty;
         #endregion
 

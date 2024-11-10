@@ -123,6 +123,7 @@ namespace TagEditor
 		private void InitializeComponent()
 		{
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ID3AdapterEdit));
             this._tabControlLyrics = new System.Windows.Forms.TabControl();
             this._tabPageGeneric = new System.Windows.Forms.TabPage();
             this._labelSHA = new System.Windows.Forms.Label();
@@ -198,10 +199,11 @@ namespace TagEditor
             this._tabControlLyrics.Controls.Add(this._tabPageLyrics);
             this._tabControlLyrics.Controls.Add(this._tabPageComments);
             this._tabControlLyrics.Controls.Add(this._tabPageMore);
-            this._tabControlLyrics.Location = new System.Drawing.Point(8, 8);
+            this._tabControlLyrics.Location = new System.Drawing.Point(11, 10);
+            this._tabControlLyrics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._tabControlLyrics.Name = "_tabControlLyrics";
             this._tabControlLyrics.SelectedIndex = 0;
-            this._tabControlLyrics.Size = new System.Drawing.Size(552, 391);
+            this._tabControlLyrics.Size = new System.Drawing.Size(736, 481);
             this._tabControlLyrics.TabIndex = 0;
             // 
             // _tabPageGeneric
@@ -249,19 +251,19 @@ namespace TagEditor
             this._tabPageGeneric.Controls.Add(this._labelTrackNo);
             this._tabPageGeneric.Controls.Add(this._textBoxTitle);
             this._tabPageGeneric.Controls.Add(this._labelTitle);
-            this._tabPageGeneric.Location = new System.Drawing.Point(4, 22);
+            this._tabPageGeneric.Location = new System.Drawing.Point(4, 25);
+            this._tabPageGeneric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._tabPageGeneric.Name = "_tabPageGeneric";
-            this._tabPageGeneric.Size = new System.Drawing.Size(544, 365);
+            this._tabPageGeneric.Size = new System.Drawing.Size(728, 452);
             this._tabPageGeneric.TabIndex = 0;
-            this._tabPageGeneric.Text = "Generic";
+            this._tabPageGeneric.Text = "Общее";
             // 
             // _labelSHA
             // 
             this._labelSHA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._labelSHA.Location = new System.Drawing.Point(10, 331);
-            this._labelSHA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this._labelSHA.Location = new System.Drawing.Point(13, 407);
             this._labelSHA.Name = "_labelSHA";
-            this._labelSHA.Size = new System.Drawing.Size(164, 30);
+            this._labelSHA.Size = new System.Drawing.Size(218, 36);
             this._labelSHA.TabIndex = 43;
             this._labelSHA.Text = "SHA-1";
             this.toolTip1.SetToolTip(this._labelSHA, "Click to calculate SHA-1 160bit cryptographic hash of the audio");
@@ -269,12 +271,12 @@ namespace TagEditor
             // 
             // _buttonScanWholeFile
             // 
-            this._buttonScanWholeFile.Location = new System.Drawing.Point(10, 305);
-            this._buttonScanWholeFile.Margin = new System.Windows.Forms.Padding(2);
+            this._buttonScanWholeFile.Location = new System.Drawing.Point(13, 375);
+            this._buttonScanWholeFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this._buttonScanWholeFile.Name = "_buttonScanWholeFile";
-            this._buttonScanWholeFile.Size = new System.Drawing.Size(67, 23);
+            this._buttonScanWholeFile.Size = new System.Drawing.Size(218, 28);
             this._buttonScanWholeFile.TabIndex = 41;
-            this._buttonScanWholeFile.Text = "Scan File";
+            this._buttonScanWholeFile.Text = "Сканировать файл";
             this.toolTip1.SetToolTip(this._buttonScanWholeFile, "parse and count audio frames and bytes; result is added to details text box");
             this._buttonScanWholeFile.UseVisualStyleBackColor = true;
             this._buttonScanWholeFile.Click += new System.EventHandler(this.OnButtonScanWholeFile);
@@ -282,10 +284,10 @@ namespace TagEditor
             // hasInconsistenciesCheckBox
             // 
             this.hasInconsistenciesCheckBox.AutoCheck = false;
-            this.hasInconsistenciesCheckBox.Location = new System.Drawing.Point(10, 282);
-            this.hasInconsistenciesCheckBox.Margin = new System.Windows.Forms.Padding(2);
+            this.hasInconsistenciesCheckBox.Location = new System.Drawing.Point(13, 347);
+            this.hasInconsistenciesCheckBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hasInconsistenciesCheckBox.Name = "hasInconsistenciesCheckBox";
-            this.hasInconsistenciesCheckBox.Size = new System.Drawing.Size(136, 20);
+            this.hasInconsistenciesCheckBox.Size = new System.Drawing.Size(181, 25);
             this.hasInconsistenciesCheckBox.TabIndex = 40;
             this.hasInconsistenciesCheckBox.Text = "Has Inconsistencies";
             this.toolTip1.SetToolTip(this.hasInconsistenciesCheckBox, "VBR header size doesn\'t agree with  measured audio file size");
@@ -296,9 +298,10 @@ namespace TagEditor
             this.checkBoxVbr.AutoCheck = false;
             this.checkBoxVbr.AutoSize = true;
             this.checkBoxVbr.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this._mp3FileBindingSource, "Audio.IsVbr", true));
-            this.checkBoxVbr.Location = new System.Drawing.Point(11, 260);
+            this.checkBoxVbr.Location = new System.Drawing.Point(15, 320);
+            this.checkBoxVbr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.checkBoxVbr.Name = "checkBoxVbr";
-            this.checkBoxVbr.Size = new System.Drawing.Size(136, 17);
+            this.checkBoxVbr.Size = new System.Drawing.Size(169, 20);
             this.checkBoxVbr.TabIndex = 15;
             this.checkBoxVbr.Text = "Variable Bit Rate (VBR)";
             this.toolTip1.SetToolTip(this.checkBoxVbr, "probably VBR encoded MP3 audio");
@@ -310,19 +313,21 @@ namespace TagEditor
             // 
             // _addPicture
             // 
-            this._addPicture.Location = new System.Drawing.Point(410, 308);
+            this._addPicture.Location = new System.Drawing.Point(547, 379);
+            this._addPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._addPicture.Name = "_addPicture";
-            this._addPicture.Size = new System.Drawing.Size(91, 23);
+            this._addPicture.Size = new System.Drawing.Size(121, 28);
             this._addPicture.TabIndex = 14;
-            this._addPicture.Text = "Add Picture";
+            this._addPicture.Text = "Добавить";
             this._addPicture.Click += new System.EventHandler(this.addPicture_Click);
             // 
             // _removePicture
             // 
             this._removePicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this._removePicture.Location = new System.Drawing.Point(507, 308);
+            this._removePicture.Location = new System.Drawing.Point(676, 379);
+            this._removePicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._removePicture.Name = "_removePicture";
-            this._removePicture.Size = new System.Drawing.Size(22, 23);
+            this._removePicture.Size = new System.Drawing.Size(29, 28);
             this._removePicture.TabIndex = 13;
             this._removePicture.Text = "X";
             this._removePicture.Click += new System.EventHandler(this.removePicture_Click);
@@ -331,9 +336,10 @@ namespace TagEditor
             // 
             this._artPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._artPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this._tagHandlerBindingSource, "Picture", true));
-            this._artPictureBox.Location = new System.Drawing.Point(400, 150);
+            this._artPictureBox.Location = new System.Drawing.Point(533, 185);
+            this._artPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._artPictureBox.Name = "_artPictureBox";
-            this._artPictureBox.Size = new System.Drawing.Size(140, 152);
+            this._artPictureBox.Size = new System.Drawing.Size(186, 187);
             this._artPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this._artPictureBox.TabIndex = 12;
             this._artPictureBox.TabStop = false;
@@ -345,16 +351,18 @@ namespace TagEditor
             // _comboBoxGenre
             // 
             this._comboBoxGenre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Genre", true));
-            this._comboBoxGenre.Location = new System.Drawing.Point(71, 72);
+            this._comboBoxGenre.Location = new System.Drawing.Point(95, 89);
+            this._comboBoxGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._comboBoxGenre.Name = "_comboBoxGenre";
-            this._comboBoxGenre.Size = new System.Drawing.Size(184, 21);
+            this._comboBoxGenre.Size = new System.Drawing.Size(244, 24);
             this._comboBoxGenre.TabIndex = 11;
             // 
             // _labelGenre
             // 
-            this._labelGenre.Location = new System.Drawing.Point(8, 74);
+            this._labelGenre.Location = new System.Drawing.Point(11, 91);
+            this._labelGenre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelGenre.Name = "_labelGenre";
-            this._labelGenre.Size = new System.Drawing.Size(56, 16);
+            this._labelGenre.Size = new System.Drawing.Size(75, 20);
             this._labelGenre.TabIndex = 10;
             this._labelGenre.Text = "Genre:";
             this._labelGenre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -362,222 +370,247 @@ namespace TagEditor
             // _textBoxYear
             // 
             this._textBoxYear.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Year", true));
-            this._textBoxYear.Location = new System.Drawing.Point(301, 72);
+            this._textBoxYear.Location = new System.Drawing.Point(401, 89);
+            this._textBoxYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxYear.Name = "_textBoxYear";
-            this._textBoxYear.Size = new System.Drawing.Size(44, 20);
+            this._textBoxYear.Size = new System.Drawing.Size(57, 22);
             this._textBoxYear.TabIndex = 9;
             // 
             // _labelYear
             // 
-            this._labelYear.Location = new System.Drawing.Point(268, 74);
+            this._labelYear.Location = new System.Drawing.Point(357, 91);
+            this._labelYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelYear.Name = "_labelYear";
-            this._labelYear.Size = new System.Drawing.Size(32, 16);
+            this._labelYear.Size = new System.Drawing.Size(43, 20);
             this._labelYear.TabIndex = 8;
             this._labelYear.Text = "Year:";
             this._labelYear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _labelAlbum
             // 
-            this._labelAlbum.Location = new System.Drawing.Point(8, 50);
+            this._labelAlbum.Location = new System.Drawing.Point(11, 62);
+            this._labelAlbum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelAlbum.Name = "_labelAlbum";
-            this._labelAlbum.Size = new System.Drawing.Size(56, 16);
+            this._labelAlbum.Size = new System.Drawing.Size(75, 20);
             this._labelAlbum.TabIndex = 7;
-            this._labelAlbum.Text = "Album:";
+            this._labelAlbum.Text = "Альбом:";
             this._labelAlbum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _labelArtist
             // 
-            this._labelArtist.Location = new System.Drawing.Point(8, 28);
+            this._labelArtist.Location = new System.Drawing.Point(11, 34);
+            this._labelArtist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelArtist.Name = "_labelArtist";
-            this._labelArtist.Size = new System.Drawing.Size(56, 16);
+            this._labelArtist.Size = new System.Drawing.Size(75, 20);
             this._labelArtist.TabIndex = 6;
-            this._labelArtist.Text = "Artist:";
+            this._labelArtist.Text = "Артист:";
             this._labelArtist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _textBoxAlbum
             // 
             this._textBoxAlbum.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Album", true));
-            this._textBoxAlbum.Location = new System.Drawing.Point(71, 50);
+            this._textBoxAlbum.Location = new System.Drawing.Point(95, 62);
+            this._textBoxAlbum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxAlbum.Name = "_textBoxAlbum";
-            this._textBoxAlbum.Size = new System.Drawing.Size(448, 20);
+            this._textBoxAlbum.Size = new System.Drawing.Size(596, 22);
             this._textBoxAlbum.TabIndex = 5;
             // 
             // _textBoxArtist
             // 
             this._textBoxArtist.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Artist", true));
-            this._textBoxArtist.Location = new System.Drawing.Point(71, 28);
+            this._textBoxArtist.Location = new System.Drawing.Point(95, 34);
+            this._textBoxArtist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxArtist.Name = "_textBoxArtist";
-            this._textBoxArtist.Size = new System.Drawing.Size(448, 20);
+            this._textBoxArtist.Size = new System.Drawing.Size(596, 22);
             this._textBoxArtist.TabIndex = 4;
             // 
             // _textBoxSampleRate
             // 
-            this._textBoxSampleRate.Location = new System.Drawing.Point(78, 236);
+            this._textBoxSampleRate.Location = new System.Drawing.Point(104, 290);
+            this._textBoxSampleRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxSampleRate.Name = "_textBoxSampleRate";
             this._textBoxSampleRate.ReadOnly = true;
-            this._textBoxSampleRate.Size = new System.Drawing.Size(60, 20);
+            this._textBoxSampleRate.Size = new System.Drawing.Size(79, 22);
             this._textBoxSampleRate.TabIndex = 3;
             this._textBoxSampleRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // _textBoxKBitRate
             // 
-            this._textBoxKBitRate.Location = new System.Drawing.Point(78, 215);
+            this._textBoxKBitRate.Location = new System.Drawing.Point(104, 265);
+            this._textBoxKBitRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxKBitRate.Name = "_textBoxKBitRate";
             this._textBoxKBitRate.ReadOnly = true;
-            this._textBoxKBitRate.Size = new System.Drawing.Size(60, 20);
+            this._textBoxKBitRate.Size = new System.Drawing.Size(79, 22);
             this._textBoxKBitRate.TabIndex = 3;
             this._textBoxKBitRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // _textBoxKBitRateVbr
             // 
-            this._textBoxKBitRateVbr.Location = new System.Drawing.Point(78, 194);
+            this._textBoxKBitRateVbr.Location = new System.Drawing.Point(104, 239);
+            this._textBoxKBitRateVbr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxKBitRateVbr.Name = "_textBoxKBitRateVbr";
             this._textBoxKBitRateVbr.ReadOnly = true;
-            this._textBoxKBitRateVbr.Size = new System.Drawing.Size(60, 20);
+            this._textBoxKBitRateVbr.Size = new System.Drawing.Size(79, 22);
             this._textBoxKBitRateVbr.TabIndex = 3;
             this._textBoxKBitRateVbr.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // _textBoxKBitRateCalc
             // 
-            this._textBoxKBitRateCalc.Location = new System.Drawing.Point(78, 173);
+            this._textBoxKBitRateCalc.Location = new System.Drawing.Point(104, 213);
+            this._textBoxKBitRateCalc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxKBitRateCalc.Name = "_textBoxKBitRateCalc";
             this._textBoxKBitRateCalc.ReadOnly = true;
-            this._textBoxKBitRateCalc.Size = new System.Drawing.Size(60, 20);
+            this._textBoxKBitRateCalc.Size = new System.Drawing.Size(79, 22);
             this._textBoxKBitRateCalc.TabIndex = 3;
             this._textBoxKBitRateCalc.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // _textBoxKBitRateMP3
             // 
-            this._textBoxKBitRateMP3.Location = new System.Drawing.Point(78, 152);
+            this._textBoxKBitRateMP3.Location = new System.Drawing.Point(104, 187);
+            this._textBoxKBitRateMP3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxKBitRateMP3.Name = "_textBoxKBitRateMP3";
             this._textBoxKBitRateMP3.ReadOnly = true;
-            this._textBoxKBitRateMP3.Size = new System.Drawing.Size(60, 20);
+            this._textBoxKBitRateMP3.Size = new System.Drawing.Size(79, 22);
             this._textBoxKBitRateMP3.TabIndex = 3;
             this._textBoxKBitRateMP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // _textBoxLength
             // 
             this._textBoxLength.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Length", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "hh:mm:ss.fff"));
-            this._textBoxLength.Location = new System.Drawing.Point(78, 131);
+            this._textBoxLength.Location = new System.Drawing.Point(104, 161);
+            this._textBoxLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxLength.Name = "_textBoxLength";
             this._textBoxLength.ReadOnly = true;
-            this._textBoxLength.Size = new System.Drawing.Size(60, 20);
+            this._textBoxLength.Size = new System.Drawing.Size(79, 22);
             this._textBoxLength.TabIndex = 3;
             // 
             // _textBoxPadding
             // 
             this._textBoxPadding.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "PaddingSize", true, System.Windows.Forms.DataSourceUpdateMode.Never));
-            this._textBoxPadding.Location = new System.Drawing.Point(78, 109);
+            this._textBoxPadding.Location = new System.Drawing.Point(104, 134);
+            this._textBoxPadding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxPadding.Name = "_textBoxPadding";
             this._textBoxPadding.ReadOnly = true;
-            this._textBoxPadding.Size = new System.Drawing.Size(60, 20);
+            this._textBoxPadding.Size = new System.Drawing.Size(79, 22);
             this._textBoxPadding.TabIndex = 3;
             this._textBoxPadding.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(143, 216);
+            this.label10.Location = new System.Drawing.Point(191, 266);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(34, 17);
+            this.label10.Size = new System.Drawing.Size(45, 21);
             this.label10.TabIndex = 2;
             this.label10.Text = "kbit/s";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(143, 237);
+            this.label4.Location = new System.Drawing.Point(191, 292);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(34, 17);
+            this.label4.Size = new System.Drawing.Size(45, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = "kHz";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(143, 195);
+            this.label8.Location = new System.Drawing.Point(191, 240);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 17);
+            this.label8.Size = new System.Drawing.Size(45, 21);
             this.label8.TabIndex = 2;
             this.label8.Text = "kbit/s";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(143, 110);
+            this.label2.Location = new System.Drawing.Point(191, 135);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 17);
+            this.label2.Size = new System.Drawing.Size(45, 21);
             this.label2.TabIndex = 2;
             this.label2.Text = "bytes";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(2, 216);
+            this.label9.Location = new System.Drawing.Point(3, 266);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 17);
+            this.label9.Size = new System.Drawing.Size(100, 21);
             this.label9.TabIndex = 2;
             this.label9.Text = "BitRate:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(143, 174);
+            this.label6.Location = new System.Drawing.Point(191, 214);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 17);
+            this.label6.Size = new System.Drawing.Size(45, 21);
             this.label6.TabIndex = 2;
             this.label6.Text = "kbit/s";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(2, 195);
+            this.label7.Location = new System.Drawing.Point(3, 240);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(75, 17);
+            this.label7.Size = new System.Drawing.Size(100, 21);
             this.label7.TabIndex = 2;
             this.label7.Text = "VbrBitRate:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(2, 237);
+            this.label3.Location = new System.Drawing.Point(3, 292);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 17);
+            this.label3.Size = new System.Drawing.Size(100, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "Samples:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(2, 174);
+            this.label5.Location = new System.Drawing.Point(3, 214);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 17);
+            this.label5.Size = new System.Drawing.Size(100, 21);
             this.label5.TabIndex = 2;
             this.label5.Text = "CalcBitRate:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(143, 154);
+            this.label1.Location = new System.Drawing.Point(191, 190);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 17);
+            this.label1.Size = new System.Drawing.Size(45, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "kbit/s";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // _labelKBitRate
             // 
-            this._labelKBitRate.Location = new System.Drawing.Point(2, 154);
+            this._labelKBitRate.Location = new System.Drawing.Point(3, 190);
+            this._labelKBitRate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelKBitRate.Name = "_labelKBitRate";
-            this._labelKBitRate.Size = new System.Drawing.Size(75, 17);
+            this._labelKBitRate.Size = new System.Drawing.Size(100, 21);
             this._labelKBitRate.TabIndex = 2;
             this._labelKBitRate.Text = "MP3BitRate:";
             this._labelKBitRate.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _labelPadding
             // 
-            this._labelPadding.Location = new System.Drawing.Point(2, 110);
+            this._labelPadding.Location = new System.Drawing.Point(3, 135);
+            this._labelPadding.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelPadding.Name = "_labelPadding";
-            this._labelPadding.Size = new System.Drawing.Size(75, 17);
+            this._labelPadding.Size = new System.Drawing.Size(100, 21);
             this._labelPadding.TabIndex = 2;
             this._labelPadding.Text = "Padding:";
             this._labelPadding.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -585,25 +618,28 @@ namespace TagEditor
             // _labelDetails
             // 
             this._labelDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this._labelDetails.Location = new System.Drawing.Point(192, 96);
+            this._labelDetails.Location = new System.Drawing.Point(256, 118);
+            this._labelDetails.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelDetails.Name = "_labelDetails";
-            this._labelDetails.Size = new System.Drawing.Size(200, 265);
+            this._labelDetails.Size = new System.Drawing.Size(266, 326);
             this._labelDetails.TabIndex = 2;
-            this._labelDetails.Text = "Details:";
+            this._labelDetails.Text = "Детали:";
             // 
             // _textBoxDiscNo
             // 
             this._textBoxDiscNo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Disc", true));
-            this._textBoxDiscNo.Location = new System.Drawing.Point(393, 72);
+            this._textBoxDiscNo.Location = new System.Drawing.Point(524, 89);
+            this._textBoxDiscNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxDiscNo.Name = "_textBoxDiscNo";
-            this._textBoxDiscNo.Size = new System.Drawing.Size(40, 20);
+            this._textBoxDiscNo.Size = new System.Drawing.Size(52, 22);
             this._textBoxDiscNo.TabIndex = 3;
             // 
             // _labelLength
             // 
-            this._labelLength.Location = new System.Drawing.Point(2, 131);
+            this._labelLength.Location = new System.Drawing.Point(3, 161);
+            this._labelLength.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelLength.Name = "_labelLength";
-            this._labelLength.Size = new System.Drawing.Size(75, 17);
+            this._labelLength.Size = new System.Drawing.Size(100, 21);
             this._labelLength.TabIndex = 2;
             this._labelLength.Text = "Length:";
             this._labelLength.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -611,25 +647,28 @@ namespace TagEditor
             // _textBoxTrackNo
             // 
             this._textBoxTrackNo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Track", true));
-            this._textBoxTrackNo.Location = new System.Drawing.Point(479, 72);
+            this._textBoxTrackNo.Location = new System.Drawing.Point(639, 89);
+            this._textBoxTrackNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxTrackNo.Name = "_textBoxTrackNo";
-            this._textBoxTrackNo.Size = new System.Drawing.Size(40, 20);
+            this._textBoxTrackNo.Size = new System.Drawing.Size(52, 22);
             this._textBoxTrackNo.TabIndex = 3;
             // 
             // _labelDiscNo
             // 
-            this._labelDiscNo.Location = new System.Drawing.Point(346, 74);
+            this._labelDiscNo.Location = new System.Drawing.Point(461, 91);
+            this._labelDiscNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelDiscNo.Name = "_labelDiscNo";
-            this._labelDiscNo.Size = new System.Drawing.Size(46, 16);
+            this._labelDiscNo.Size = new System.Drawing.Size(61, 20);
             this._labelDiscNo.TabIndex = 2;
             this._labelDiscNo.Text = "Disc #:";
             this._labelDiscNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _labelTrackNo
             // 
-            this._labelTrackNo.Location = new System.Drawing.Point(413, 74);
+            this._labelTrackNo.Location = new System.Drawing.Point(551, 91);
+            this._labelTrackNo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelTrackNo.Name = "_labelTrackNo";
-            this._labelTrackNo.Size = new System.Drawing.Size(68, 16);
+            this._labelTrackNo.Size = new System.Drawing.Size(91, 20);
             this._labelTrackNo.TabIndex = 2;
             this._labelTrackNo.Text = "Track #:";
             this._labelTrackNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -637,87 +676,96 @@ namespace TagEditor
             // _textBoxTitle
             // 
             this._textBoxTitle.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Title", true));
-            this._textBoxTitle.Location = new System.Drawing.Point(71, 6);
+            this._textBoxTitle.Location = new System.Drawing.Point(95, 7);
+            this._textBoxTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxTitle.Name = "_textBoxTitle";
-            this._textBoxTitle.Size = new System.Drawing.Size(448, 20);
+            this._textBoxTitle.Size = new System.Drawing.Size(596, 22);
             this._textBoxTitle.TabIndex = 1;
             // 
             // _labelTitle
             // 
-            this._labelTitle.Location = new System.Drawing.Point(8, 6);
+            this._labelTitle.Location = new System.Drawing.Point(11, 7);
+            this._labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelTitle.Name = "_labelTitle";
-            this._labelTitle.Size = new System.Drawing.Size(56, 16);
+            this._labelTitle.Size = new System.Drawing.Size(75, 20);
             this._labelTitle.TabIndex = 0;
-            this._labelTitle.Text = "Title:";
+            this._labelTitle.Text = "Название:";
             this._labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _tabPageLyrics
             // 
             this._tabPageLyrics.Controls.Add(this._textBoxLyrics);
-            this._tabPageLyrics.Location = new System.Drawing.Point(4, 22);
+            this._tabPageLyrics.Location = new System.Drawing.Point(4, 25);
+            this._tabPageLyrics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._tabPageLyrics.Name = "_tabPageLyrics";
-            this._tabPageLyrics.Size = new System.Drawing.Size(544, 365);
+            this._tabPageLyrics.Size = new System.Drawing.Size(728, 452);
             this._tabPageLyrics.TabIndex = 1;
-            this._tabPageLyrics.Text = "Lyrics";
+            this._tabPageLyrics.Text = "Текст песни";
             // 
             // _textBoxLyrics
             // 
             this._textBoxLyrics.AcceptsReturn = true;
             this._textBoxLyrics.AcceptsTab = true;
             this._textBoxLyrics.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Lyrics", true));
-            this._textBoxLyrics.Location = new System.Drawing.Point(16, 16);
+            this._textBoxLyrics.Location = new System.Drawing.Point(21, 20);
+            this._textBoxLyrics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxLyrics.Multiline = true;
             this._textBoxLyrics.Name = "_textBoxLyrics";
             this._textBoxLyrics.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this._textBoxLyrics.Size = new System.Drawing.Size(512, 288);
+            this._textBoxLyrics.Size = new System.Drawing.Size(681, 354);
             this._textBoxLyrics.TabIndex = 0;
             // 
             // _tabPageComments
             // 
             this._tabPageComments.Controls.Add(this._textBoxComments);
-            this._tabPageComments.Location = new System.Drawing.Point(4, 22);
+            this._tabPageComments.Location = new System.Drawing.Point(4, 25);
+            this._tabPageComments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._tabPageComments.Name = "_tabPageComments";
-            this._tabPageComments.Size = new System.Drawing.Size(544, 365);
+            this._tabPageComments.Size = new System.Drawing.Size(728, 452);
             this._tabPageComments.TabIndex = 3;
-            this._tabPageComments.Text = "Comments";
+            this._tabPageComments.Text = "Комментарии";
             // 
             // _textBoxComments
             // 
             this._textBoxComments.AcceptsReturn = true;
             this._textBoxComments.AcceptsTab = true;
             this._textBoxComments.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Comment", true));
-            this._textBoxComments.Location = new System.Drawing.Point(16, 15);
+            this._textBoxComments.Location = new System.Drawing.Point(21, 18);
+            this._textBoxComments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxComments.Multiline = true;
             this._textBoxComments.Name = "_textBoxComments";
             this._textBoxComments.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this._textBoxComments.Size = new System.Drawing.Size(512, 288);
+            this._textBoxComments.Size = new System.Drawing.Size(681, 354);
             this._textBoxComments.TabIndex = 1;
             // 
             // _tabPageMore
             // 
             this._tabPageMore.Controls.Add(this._labelComposer);
             this._tabPageMore.Controls.Add(this._textBoxComposer);
-            this._tabPageMore.Location = new System.Drawing.Point(4, 22);
+            this._tabPageMore.Location = new System.Drawing.Point(4, 25);
+            this._tabPageMore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._tabPageMore.Name = "_tabPageMore";
-            this._tabPageMore.Size = new System.Drawing.Size(544, 365);
+            this._tabPageMore.Size = new System.Drawing.Size(728, 452);
             this._tabPageMore.TabIndex = 2;
-            this._tabPageMore.Text = "More";
+            this._tabPageMore.Text = "Больше";
             // 
             // _labelComposer
             // 
-            this._labelComposer.Location = new System.Drawing.Point(8, 8);
+            this._labelComposer.Location = new System.Drawing.Point(11, 10);
+            this._labelComposer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelComposer.Name = "_labelComposer";
-            this._labelComposer.Size = new System.Drawing.Size(66, 16);
+            this._labelComposer.Size = new System.Drawing.Size(88, 20);
             this._labelComposer.TabIndex = 15;
-            this._labelComposer.Text = "Composer:";
+            this._labelComposer.Text = "Композитор:";
             this._labelComposer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _textBoxComposer
             // 
             this._textBoxComposer.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Composer", true));
-            this._textBoxComposer.Location = new System.Drawing.Point(80, 8);
+            this._textBoxComposer.Location = new System.Drawing.Point(107, 10);
+            this._textBoxComposer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._textBoxComposer.Name = "_textBoxComposer";
-            this._textBoxComposer.Size = new System.Drawing.Size(448, 20);
+            this._textBoxComposer.Size = new System.Drawing.Size(596, 22);
             this._textBoxComposer.TabIndex = 14;
             // 
             // _errorProvider
@@ -727,9 +775,10 @@ namespace TagEditor
             // 
             // _buttonOK
             // 
-            this._buttonOK.Location = new System.Drawing.Point(208, 405);
+            this._buttonOK.Location = new System.Drawing.Point(277, 498);
+            this._buttonOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._buttonOK.Name = "_buttonOK";
-            this._buttonOK.Size = new System.Drawing.Size(72, 24);
+            this._buttonOK.Size = new System.Drawing.Size(96, 30);
             this._buttonOK.TabIndex = 1;
             this._buttonOK.Text = "OK";
             this._buttonOK.Click += new System.EventHandler(this.OnOkClick);
@@ -737,27 +786,30 @@ namespace TagEditor
             // _buttonCancel
             // 
             this._buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this._buttonCancel.Location = new System.Drawing.Point(288, 405);
+            this._buttonCancel.Location = new System.Drawing.Point(384, 498);
+            this._buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this._buttonCancel.Name = "_buttonCancel";
-            this._buttonCancel.Size = new System.Drawing.Size(72, 24);
+            this._buttonCancel.Size = new System.Drawing.Size(96, 30);
             this._buttonCancel.TabIndex = 2;
-            this._buttonCancel.Text = "&Cancel";
+            this._buttonCancel.Text = "&Отменить";
             this._buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // ID3AdapterEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this._buttonCancel;
-            this.ClientSize = new System.Drawing.Size(567, 439);
+            this.ClientSize = new System.Drawing.Size(756, 540);
             this.Controls.Add(this._buttonCancel);
             this.Controls.Add(this._buttonOK);
             this.Controls.Add(this._tabControlLyrics);
             this.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._mp3FileBindingSource, "FileName", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ID3AdapterEdit";
             this.ShowInTaskbar = false;
-            this.Text = "ID3 Tag Adapter Editor";
+            this.Text = "Редактор тегов";
             this.Load += new System.EventHandler(this.ID3Edit_Load);
             this._tabControlLyrics.ResumeLayout(false);
             this._tabPageGeneric.ResumeLayout(false);
@@ -902,5 +954,5 @@ namespace TagEditor
                 _labelSHA.Text = txt;
             }
         }
-	}
+    }
 }

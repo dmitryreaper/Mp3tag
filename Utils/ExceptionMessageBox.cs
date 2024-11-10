@@ -22,7 +22,7 @@ namespace Utils
 
         public static void Show( IWin32Window owner, Exception ex, string title )
         {
-            DialogResult result = MessageBox.Show(owner, ex.Message + "\nShow Details?", title, MessageBoxButtons.OKCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2);
+            DialogResult result = MessageBox.Show(owner, ex.Message + "\nПоказать детально?", title, MessageBoxButtons.OKCancel, MessageBoxIcon.Error, MessageBoxDefaultButton.Button2);
             if( result == DialogResult.OK )
             {
                 string details = ex.Message;

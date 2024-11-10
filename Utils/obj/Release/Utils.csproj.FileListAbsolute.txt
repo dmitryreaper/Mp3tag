@@ -1,0 +1,6 @@
+D:\Source\CsharpMusic\id3lib\Utils\bin\Release\Utils.dll
+D:\Source\CsharpMusic\id3lib\Utils\bin\Release\Utils.pdb
+D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.csproj.AssemblyReference.cache
+D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
+D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.dll
+D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.pdb
