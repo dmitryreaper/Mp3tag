@@ -200,7 +200,7 @@ namespace TagEditor
             this._tabControlLyrics.Controls.Add(this._tabPageComments);
             this._tabControlLyrics.Controls.Add(this._tabPageMore);
             this._tabControlLyrics.Location = new System.Drawing.Point(11, 10);
-            this._tabControlLyrics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._tabControlLyrics.Margin = new System.Windows.Forms.Padding(4);
             this._tabControlLyrics.Name = "_tabControlLyrics";
             this._tabControlLyrics.SelectedIndex = 0;
             this._tabControlLyrics.Size = new System.Drawing.Size(736, 481);
@@ -252,7 +252,7 @@ namespace TagEditor
             this._tabPageGeneric.Controls.Add(this._textBoxTitle);
             this._tabPageGeneric.Controls.Add(this._labelTitle);
             this._tabPageGeneric.Location = new System.Drawing.Point(4, 25);
-            this._tabPageGeneric.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._tabPageGeneric.Margin = new System.Windows.Forms.Padding(4);
             this._tabPageGeneric.Name = "_tabPageGeneric";
             this._tabPageGeneric.Size = new System.Drawing.Size(728, 452);
             this._tabPageGeneric.TabIndex = 0;
@@ -299,7 +299,7 @@ namespace TagEditor
             this.checkBoxVbr.AutoSize = true;
             this.checkBoxVbr.DataBindings.Add(new System.Windows.Forms.Binding("Checked", this._mp3FileBindingSource, "Audio.IsVbr", true));
             this.checkBoxVbr.Location = new System.Drawing.Point(15, 320);
-            this.checkBoxVbr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxVbr.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxVbr.Name = "checkBoxVbr";
             this.checkBoxVbr.Size = new System.Drawing.Size(169, 20);
             this.checkBoxVbr.TabIndex = 15;
@@ -314,7 +314,7 @@ namespace TagEditor
             // _addPicture
             // 
             this._addPicture.Location = new System.Drawing.Point(547, 379);
-            this._addPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._addPicture.Margin = new System.Windows.Forms.Padding(4);
             this._addPicture.Name = "_addPicture";
             this._addPicture.Size = new System.Drawing.Size(121, 28);
             this._addPicture.TabIndex = 14;
@@ -325,7 +325,7 @@ namespace TagEditor
             // 
             this._removePicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this._removePicture.Location = new System.Drawing.Point(676, 379);
-            this._removePicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._removePicture.Margin = new System.Windows.Forms.Padding(4);
             this._removePicture.Name = "_removePicture";
             this._removePicture.Size = new System.Drawing.Size(29, 28);
             this._removePicture.TabIndex = 13;
@@ -337,7 +337,7 @@ namespace TagEditor
             this._artPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this._artPictureBox.DataBindings.Add(new System.Windows.Forms.Binding("Image", this._tagHandlerBindingSource, "Picture", true));
             this._artPictureBox.Location = new System.Drawing.Point(533, 185);
-            this._artPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._artPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this._artPictureBox.Name = "_artPictureBox";
             this._artPictureBox.Size = new System.Drawing.Size(186, 187);
             this._artPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -352,7 +352,7 @@ namespace TagEditor
             // 
             this._comboBoxGenre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Genre", true));
             this._comboBoxGenre.Location = new System.Drawing.Point(95, 89);
-            this._comboBoxGenre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._comboBoxGenre.Margin = new System.Windows.Forms.Padding(4);
             this._comboBoxGenre.Name = "_comboBoxGenre";
             this._comboBoxGenre.Size = new System.Drawing.Size(244, 24);
             this._comboBoxGenre.TabIndex = 11;
@@ -371,7 +371,7 @@ namespace TagEditor
             // 
             this._textBoxYear.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Year", true));
             this._textBoxYear.Location = new System.Drawing.Point(401, 89);
-            this._textBoxYear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxYear.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxYear.Name = "_textBoxYear";
             this._textBoxYear.Size = new System.Drawing.Size(57, 22);
             this._textBoxYear.TabIndex = 9;
@@ -410,7 +410,7 @@ namespace TagEditor
             // 
             this._textBoxAlbum.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Album", true));
             this._textBoxAlbum.Location = new System.Drawing.Point(95, 62);
-            this._textBoxAlbum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxAlbum.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxAlbum.Name = "_textBoxAlbum";
             this._textBoxAlbum.Size = new System.Drawing.Size(596, 22);
             this._textBoxAlbum.TabIndex = 5;
@@ -419,7 +419,7 @@ namespace TagEditor
             // 
             this._textBoxArtist.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Artist", true));
             this._textBoxArtist.Location = new System.Drawing.Point(95, 34);
-            this._textBoxArtist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxArtist.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxArtist.Name = "_textBoxArtist";
             this._textBoxArtist.Size = new System.Drawing.Size(596, 22);
             this._textBoxArtist.TabIndex = 4;
@@ -427,7 +427,7 @@ namespace TagEditor
             // _textBoxSampleRate
             // 
             this._textBoxSampleRate.Location = new System.Drawing.Point(104, 290);
-            this._textBoxSampleRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxSampleRate.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxSampleRate.Name = "_textBoxSampleRate";
             this._textBoxSampleRate.ReadOnly = true;
             this._textBoxSampleRate.Size = new System.Drawing.Size(79, 22);
@@ -437,7 +437,7 @@ namespace TagEditor
             // _textBoxKBitRate
             // 
             this._textBoxKBitRate.Location = new System.Drawing.Point(104, 265);
-            this._textBoxKBitRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxKBitRate.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxKBitRate.Name = "_textBoxKBitRate";
             this._textBoxKBitRate.ReadOnly = true;
             this._textBoxKBitRate.Size = new System.Drawing.Size(79, 22);
@@ -447,7 +447,7 @@ namespace TagEditor
             // _textBoxKBitRateVbr
             // 
             this._textBoxKBitRateVbr.Location = new System.Drawing.Point(104, 239);
-            this._textBoxKBitRateVbr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxKBitRateVbr.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxKBitRateVbr.Name = "_textBoxKBitRateVbr";
             this._textBoxKBitRateVbr.ReadOnly = true;
             this._textBoxKBitRateVbr.Size = new System.Drawing.Size(79, 22);
@@ -457,7 +457,7 @@ namespace TagEditor
             // _textBoxKBitRateCalc
             // 
             this._textBoxKBitRateCalc.Location = new System.Drawing.Point(104, 213);
-            this._textBoxKBitRateCalc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxKBitRateCalc.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxKBitRateCalc.Name = "_textBoxKBitRateCalc";
             this._textBoxKBitRateCalc.ReadOnly = true;
             this._textBoxKBitRateCalc.Size = new System.Drawing.Size(79, 22);
@@ -467,7 +467,7 @@ namespace TagEditor
             // _textBoxKBitRateMP3
             // 
             this._textBoxKBitRateMP3.Location = new System.Drawing.Point(104, 187);
-            this._textBoxKBitRateMP3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxKBitRateMP3.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxKBitRateMP3.Name = "_textBoxKBitRateMP3";
             this._textBoxKBitRateMP3.ReadOnly = true;
             this._textBoxKBitRateMP3.Size = new System.Drawing.Size(79, 22);
@@ -478,7 +478,7 @@ namespace TagEditor
             // 
             this._textBoxLength.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Length", true, System.Windows.Forms.DataSourceUpdateMode.Never, null, "hh:mm:ss.fff"));
             this._textBoxLength.Location = new System.Drawing.Point(104, 161);
-            this._textBoxLength.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxLength.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxLength.Name = "_textBoxLength";
             this._textBoxLength.ReadOnly = true;
             this._textBoxLength.Size = new System.Drawing.Size(79, 22);
@@ -488,7 +488,7 @@ namespace TagEditor
             // 
             this._textBoxPadding.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "PaddingSize", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this._textBoxPadding.Location = new System.Drawing.Point(104, 134);
-            this._textBoxPadding.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxPadding.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxPadding.Name = "_textBoxPadding";
             this._textBoxPadding.ReadOnly = true;
             this._textBoxPadding.Size = new System.Drawing.Size(79, 22);
@@ -629,7 +629,7 @@ namespace TagEditor
             // 
             this._textBoxDiscNo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Disc", true));
             this._textBoxDiscNo.Location = new System.Drawing.Point(524, 89);
-            this._textBoxDiscNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxDiscNo.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxDiscNo.Name = "_textBoxDiscNo";
             this._textBoxDiscNo.Size = new System.Drawing.Size(52, 22);
             this._textBoxDiscNo.TabIndex = 3;
@@ -648,7 +648,7 @@ namespace TagEditor
             // 
             this._textBoxTrackNo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Track", true));
             this._textBoxTrackNo.Location = new System.Drawing.Point(639, 89);
-            this._textBoxTrackNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxTrackNo.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxTrackNo.Name = "_textBoxTrackNo";
             this._textBoxTrackNo.Size = new System.Drawing.Size(52, 22);
             this._textBoxTrackNo.TabIndex = 3;
@@ -677,17 +677,17 @@ namespace TagEditor
             // 
             this._textBoxTitle.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Title", true));
             this._textBoxTitle.Location = new System.Drawing.Point(95, 7);
-            this._textBoxTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxTitle.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxTitle.Name = "_textBoxTitle";
             this._textBoxTitle.Size = new System.Drawing.Size(596, 22);
             this._textBoxTitle.TabIndex = 1;
             // 
             // _labelTitle
             // 
-            this._labelTitle.Location = new System.Drawing.Point(11, 7);
+            this._labelTitle.Location = new System.Drawing.Point(3, 8);
             this._labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelTitle.Name = "_labelTitle";
-            this._labelTitle.Size = new System.Drawing.Size(75, 20);
+            this._labelTitle.Size = new System.Drawing.Size(81, 20);
             this._labelTitle.TabIndex = 0;
             this._labelTitle.Text = "Название:";
             this._labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -696,7 +696,7 @@ namespace TagEditor
             // 
             this._tabPageLyrics.Controls.Add(this._textBoxLyrics);
             this._tabPageLyrics.Location = new System.Drawing.Point(4, 25);
-            this._tabPageLyrics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._tabPageLyrics.Margin = new System.Windows.Forms.Padding(4);
             this._tabPageLyrics.Name = "_tabPageLyrics";
             this._tabPageLyrics.Size = new System.Drawing.Size(728, 452);
             this._tabPageLyrics.TabIndex = 1;
@@ -708,7 +708,7 @@ namespace TagEditor
             this._textBoxLyrics.AcceptsTab = true;
             this._textBoxLyrics.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Lyrics", true));
             this._textBoxLyrics.Location = new System.Drawing.Point(21, 20);
-            this._textBoxLyrics.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxLyrics.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxLyrics.Multiline = true;
             this._textBoxLyrics.Name = "_textBoxLyrics";
             this._textBoxLyrics.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -719,7 +719,7 @@ namespace TagEditor
             // 
             this._tabPageComments.Controls.Add(this._textBoxComments);
             this._tabPageComments.Location = new System.Drawing.Point(4, 25);
-            this._tabPageComments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._tabPageComments.Margin = new System.Windows.Forms.Padding(4);
             this._tabPageComments.Name = "_tabPageComments";
             this._tabPageComments.Size = new System.Drawing.Size(728, 452);
             this._tabPageComments.TabIndex = 3;
@@ -731,7 +731,7 @@ namespace TagEditor
             this._textBoxComments.AcceptsTab = true;
             this._textBoxComments.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Comment", true));
             this._textBoxComments.Location = new System.Drawing.Point(21, 18);
-            this._textBoxComments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxComments.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxComments.Multiline = true;
             this._textBoxComments.Name = "_textBoxComments";
             this._textBoxComments.ScrollBars = System.Windows.Forms.ScrollBars.Both;
@@ -743,7 +743,7 @@ namespace TagEditor
             this._tabPageMore.Controls.Add(this._labelComposer);
             this._tabPageMore.Controls.Add(this._textBoxComposer);
             this._tabPageMore.Location = new System.Drawing.Point(4, 25);
-            this._tabPageMore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._tabPageMore.Margin = new System.Windows.Forms.Padding(4);
             this._tabPageMore.Name = "_tabPageMore";
             this._tabPageMore.Size = new System.Drawing.Size(728, 452);
             this._tabPageMore.TabIndex = 2;
@@ -751,10 +751,10 @@ namespace TagEditor
             // 
             // _labelComposer
             // 
-            this._labelComposer.Location = new System.Drawing.Point(11, 10);
+            this._labelComposer.Location = new System.Drawing.Point(2, 10);
             this._labelComposer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelComposer.Name = "_labelComposer";
-            this._labelComposer.Size = new System.Drawing.Size(88, 20);
+            this._labelComposer.Size = new System.Drawing.Size(97, 20);
             this._labelComposer.TabIndex = 15;
             this._labelComposer.Text = "Композитор:";
             this._labelComposer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -763,7 +763,7 @@ namespace TagEditor
             // 
             this._textBoxComposer.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Composer", true));
             this._textBoxComposer.Location = new System.Drawing.Point(107, 10);
-            this._textBoxComposer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._textBoxComposer.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxComposer.Name = "_textBoxComposer";
             this._textBoxComposer.Size = new System.Drawing.Size(596, 22);
             this._textBoxComposer.TabIndex = 14;
@@ -776,7 +776,7 @@ namespace TagEditor
             // _buttonOK
             // 
             this._buttonOK.Location = new System.Drawing.Point(277, 498);
-            this._buttonOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._buttonOK.Margin = new System.Windows.Forms.Padding(4);
             this._buttonOK.Name = "_buttonOK";
             this._buttonOK.Size = new System.Drawing.Size(96, 30);
             this._buttonOK.TabIndex = 1;
@@ -787,7 +787,7 @@ namespace TagEditor
             // 
             this._buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this._buttonCancel.Location = new System.Drawing.Point(384, 498);
-            this._buttonCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this._buttonCancel.Margin = new System.Windows.Forms.Padding(4);
             this._buttonCancel.Name = "_buttonCancel";
             this._buttonCancel.Size = new System.Drawing.Size(96, 30);
             this._buttonCancel.TabIndex = 2;
@@ -806,7 +806,7 @@ namespace TagEditor
             this.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._mp3FileBindingSource, "FileName", true, System.Windows.Forms.DataSourceUpdateMode.Never));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ID3AdapterEdit";
             this.ShowInTaskbar = false;
             this.Text = "Редактор тегов";

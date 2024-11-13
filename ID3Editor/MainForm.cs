@@ -106,5 +106,17 @@ namespace TagEditor
             if( _mainListBox.SelectedIndex != -1 )
                 _presenter.RemoveV2tag((string)_mainListBox.Items[_mainListBox.SelectedIndex]);
         }
+
+        private void menuItem1_Click(object sender, EventArgs e)
+        {
+            Form1 help1 = new Form1();
+            help1.Show();
+        }
+
+        private void menuItem3_Click(object sender, EventArgs e)
+        {
+            Form2 help2 = new Form2();
+            help2.Show();
+        }
     }
 }

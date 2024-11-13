@@ -39,6 +39,9 @@ namespace TagEditor
             this._mainMenu = new System.Windows.Forms.MainMenu(this.components);
             this._mainMenuItem = new System.Windows.Forms.MenuItem();
             this._scanMenuItem = new System.Windows.Forms.MenuItem();
+            this.menuItem2 = new System.Windows.Forms.MenuItem();
+            this.menuItem1 = new System.Windows.Forms.MenuItem();
+            this.menuItem3 = new System.Windows.Forms.MenuItem();
             this._mainListBox = new System.Windows.Forms.ListBox();
             this._listBoxContextMenu = new System.Windows.Forms.ContextMenu();
             this._editListBoxMenuItem = new System.Windows.Forms.MenuItem();
@@ -51,7 +54,8 @@ namespace TagEditor
             // _mainMenu
             // 
             this._mainMenu.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
-            this._mainMenuItem});
+            this._mainMenuItem,
+            this.menuItem2});
             // 
             // _mainMenuItem
             // 
@@ -65,6 +69,26 @@ namespace TagEditor
             this._scanMenuItem.Index = 0;
             this._scanMenuItem.Text = "Сканировать директорию";
             this._scanMenuItem.Click += new System.EventHandler(this._scanMenuItem_Click);
+            // 
+            // menuItem2
+            // 
+            this.menuItem2.Index = 1;
+            this.menuItem2.MenuItems.AddRange(new System.Windows.Forms.MenuItem[] {
+            this.menuItem1,
+            this.menuItem3});
+            this.menuItem2.Text = "О программе";
+            // 
+            // menuItem1
+            // 
+            this.menuItem1.Index = 0;
+            this.menuItem1.Text = "Cправка";
+            this.menuItem1.Click += new System.EventHandler(this.menuItem1_Click);
+            // 
+            // menuItem3
+            // 
+            this.menuItem3.Index = 1;
+            this.menuItem3.Text = "О программе";
+            this.menuItem3.Click += new System.EventHandler(this.menuItem3_Click);
             // 
             // _mainListBox
             // 
@@ -146,5 +170,8 @@ namespace TagEditor
         protected System.Windows.Forms.MenuItem _launchListBoxMenuItem;
         #endregion
         private MenuItem _removeV2tag;
+        private MenuItem menuItem2;
+        private MenuItem menuItem1;
+        private MenuItem menuItem3;
     }
 }
