@@ -4,3 +4,9 @@ D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.csproj.AssemblyReference.ca
 D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
 D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.dll
 D:\Source\CsharpMusic\id3lib\Utils\obj\Release\Utils.pdb
+D:\Source\Mp3tag\Utils\bin\Release\Utils.dll
+D:\Source\Mp3tag\Utils\bin\Release\Utils.pdb
+D:\Source\Mp3tag\Utils\obj\Release\Utils.csproj.AssemblyReference.cache
+D:\Source\Mp3tag\Utils\obj\Release\Utils.csproj.CoreCompileInputs.cache
+D:\Source\Mp3tag\Utils\obj\Release\Utils.dll
+D:\Source\Mp3tag\Utils\obj\Release\Utils.pdb

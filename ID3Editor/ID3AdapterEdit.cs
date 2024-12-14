@@ -256,7 +256,7 @@ namespace TagEditor
             this._tabPageGeneric.Name = "_tabPageGeneric";
             this._tabPageGeneric.Size = new System.Drawing.Size(728, 452);
             this._tabPageGeneric.TabIndex = 0;
-            this._tabPageGeneric.Text = "Общее";
+            this._tabPageGeneric.Text = "Р“Р»Р°РІРЅР°СЏ";
             // 
             // _labelSHA
             // 
@@ -276,7 +276,7 @@ namespace TagEditor
             this._buttonScanWholeFile.Name = "_buttonScanWholeFile";
             this._buttonScanWholeFile.Size = new System.Drawing.Size(218, 28);
             this._buttonScanWholeFile.TabIndex = 41;
-            this._buttonScanWholeFile.Text = "Сканировать файл";
+            this._buttonScanWholeFile.Text = "Р”РµРєРѕРґРёСЂРѕРІР°С‚СЊ";
             this.toolTip1.SetToolTip(this._buttonScanWholeFile, "parse and count audio frames and bytes; result is added to details text box");
             this._buttonScanWholeFile.UseVisualStyleBackColor = true;
             this._buttonScanWholeFile.Click += new System.EventHandler(this.OnButtonScanWholeFile);
@@ -318,7 +318,7 @@ namespace TagEditor
             this._addPicture.Name = "_addPicture";
             this._addPicture.Size = new System.Drawing.Size(121, 28);
             this._addPicture.TabIndex = 14;
-            this._addPicture.Text = "Добавить";
+            this._addPicture.Text = "Р’С‹Р±СЂР°С‚СЊ";
             this._addPicture.Click += new System.EventHandler(this.addPicture_Click);
             // 
             // _removePicture
@@ -351,10 +351,10 @@ namespace TagEditor
             // _comboBoxGenre
             // 
             this._comboBoxGenre.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Genre", true));
-            this._comboBoxGenre.Location = new System.Drawing.Point(95, 89);
+            this._comboBoxGenre.Location = new System.Drawing.Point(104, 89);
             this._comboBoxGenre.Margin = new System.Windows.Forms.Padding(4);
             this._comboBoxGenre.Name = "_comboBoxGenre";
-            this._comboBoxGenre.Size = new System.Drawing.Size(244, 24);
+            this._comboBoxGenre.Size = new System.Drawing.Size(235, 24);
             this._comboBoxGenre.TabIndex = 11;
             // 
             // _labelGenre
@@ -364,7 +364,7 @@ namespace TagEditor
             this._labelGenre.Name = "_labelGenre";
             this._labelGenre.Size = new System.Drawing.Size(75, 20);
             this._labelGenre.TabIndex = 10;
-            this._labelGenre.Text = "Genre:";
+            this._labelGenre.Text = "Р–Р°РЅСЂ:";
             this._labelGenre.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _textBoxYear
@@ -383,45 +383,45 @@ namespace TagEditor
             this._labelYear.Name = "_labelYear";
             this._labelYear.Size = new System.Drawing.Size(43, 20);
             this._labelYear.TabIndex = 8;
-            this._labelYear.Text = "Year:";
+            this._labelYear.Text = "Р“РѕРґ:";
             this._labelYear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _labelAlbum
             // 
-            this._labelAlbum.Location = new System.Drawing.Point(11, 62);
+            this._labelAlbum.Location = new System.Drawing.Point(5, 62);
             this._labelAlbum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelAlbum.Name = "_labelAlbum";
-            this._labelAlbum.Size = new System.Drawing.Size(75, 20);
+            this._labelAlbum.Size = new System.Drawing.Size(91, 20);
             this._labelAlbum.TabIndex = 7;
-            this._labelAlbum.Text = "Альбом:";
+            this._labelAlbum.Text = "РљРѕРјРїРѕР·РёС‚РѕСЂ:";
             this._labelAlbum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _labelArtist
             // 
-            this._labelArtist.Location = new System.Drawing.Point(11, 34);
+            this._labelArtist.Location = new System.Drawing.Point(4, 34);
             this._labelArtist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelArtist.Name = "_labelArtist";
-            this._labelArtist.Size = new System.Drawing.Size(75, 20);
+            this._labelArtist.Size = new System.Drawing.Size(99, 20);
             this._labelArtist.TabIndex = 6;
-            this._labelArtist.Text = "Артист:";
+            this._labelArtist.Text = "РСЃРїРѕР»РЅРёС‚РµР»СЊ:";
             this._labelArtist.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _textBoxAlbum
             // 
             this._textBoxAlbum.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Album", true));
-            this._textBoxAlbum.Location = new System.Drawing.Point(95, 62);
+            this._textBoxAlbum.Location = new System.Drawing.Point(104, 62);
             this._textBoxAlbum.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxAlbum.Name = "_textBoxAlbum";
-            this._textBoxAlbum.Size = new System.Drawing.Size(596, 22);
+            this._textBoxAlbum.Size = new System.Drawing.Size(587, 22);
             this._textBoxAlbum.TabIndex = 5;
             // 
             // _textBoxArtist
             // 
             this._textBoxArtist.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Artist", true));
-            this._textBoxArtist.Location = new System.Drawing.Point(95, 34);
+            this._textBoxArtist.Location = new System.Drawing.Point(104, 34);
             this._textBoxArtist.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxArtist.Name = "_textBoxArtist";
-            this._textBoxArtist.Size = new System.Drawing.Size(596, 22);
+            this._textBoxArtist.Size = new System.Drawing.Size(587, 22);
             this._textBoxArtist.TabIndex = 4;
             // 
             // _textBoxSampleRate
@@ -623,7 +623,7 @@ namespace TagEditor
             this._labelDetails.Name = "_labelDetails";
             this._labelDetails.Size = new System.Drawing.Size(266, 326);
             this._labelDetails.TabIndex = 2;
-            this._labelDetails.Text = "Детали:";
+            this._labelDetails.Text = "РРЅС„РѕСЂРјР°С†РёСЏ:";
             // 
             // _textBoxDiscNo
             // 
@@ -660,7 +660,7 @@ namespace TagEditor
             this._labelDiscNo.Name = "_labelDiscNo";
             this._labelDiscNo.Size = new System.Drawing.Size(61, 20);
             this._labelDiscNo.TabIndex = 2;
-            this._labelDiscNo.Text = "Disc #:";
+            this._labelDiscNo.Text = "Р”РёСЃРє:";
             this._labelDiscNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _labelTrackNo
@@ -670,26 +670,26 @@ namespace TagEditor
             this._labelTrackNo.Name = "_labelTrackNo";
             this._labelTrackNo.Size = new System.Drawing.Size(91, 20);
             this._labelTrackNo.TabIndex = 2;
-            this._labelTrackNo.Text = "Track #:";
+            this._labelTrackNo.Text = "РўСЂРµРє:";
             this._labelTrackNo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _textBoxTitle
             // 
             this._textBoxTitle.DataBindings.Add(new System.Windows.Forms.Binding("Text", this._tagHandlerBindingSource, "Title", true));
-            this._textBoxTitle.Location = new System.Drawing.Point(95, 7);
+            this._textBoxTitle.Location = new System.Drawing.Point(104, 7);
             this._textBoxTitle.Margin = new System.Windows.Forms.Padding(4);
             this._textBoxTitle.Name = "_textBoxTitle";
-            this._textBoxTitle.Size = new System.Drawing.Size(596, 22);
+            this._textBoxTitle.Size = new System.Drawing.Size(587, 22);
             this._textBoxTitle.TabIndex = 1;
             // 
             // _labelTitle
             // 
-            this._labelTitle.Location = new System.Drawing.Point(3, 8);
+            this._labelTitle.Location = new System.Drawing.Point(4, 8);
             this._labelTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this._labelTitle.Name = "_labelTitle";
-            this._labelTitle.Size = new System.Drawing.Size(81, 20);
+            this._labelTitle.Size = new System.Drawing.Size(79, 20);
             this._labelTitle.TabIndex = 0;
-            this._labelTitle.Text = "Название:";
+            this._labelTitle.Text = "РќР°Р·РІР°РЅРёРµ:";
             this._labelTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _tabPageLyrics
@@ -700,7 +700,7 @@ namespace TagEditor
             this._tabPageLyrics.Name = "_tabPageLyrics";
             this._tabPageLyrics.Size = new System.Drawing.Size(728, 452);
             this._tabPageLyrics.TabIndex = 1;
-            this._tabPageLyrics.Text = "Текст песни";
+            this._tabPageLyrics.Text = "РљРѕРјРµРЅС‚Р°СЂРёРё";
             // 
             // _textBoxLyrics
             // 
@@ -723,7 +723,7 @@ namespace TagEditor
             this._tabPageComments.Name = "_tabPageComments";
             this._tabPageComments.Size = new System.Drawing.Size(728, 452);
             this._tabPageComments.TabIndex = 3;
-            this._tabPageComments.Text = "Комментарии";
+            this._tabPageComments.Text = "Р”РѕРї. РёРЅС„РѕСЂРјР°С†РёСЏ";
             // 
             // _textBoxComments
             // 
@@ -747,7 +747,7 @@ namespace TagEditor
             this._tabPageMore.Name = "_tabPageMore";
             this._tabPageMore.Size = new System.Drawing.Size(728, 452);
             this._tabPageMore.TabIndex = 2;
-            this._tabPageMore.Text = "Больше";
+            this._tabPageMore.Text = "Р”РѕРї. РїР°СЂР°РјРµС‚СЂС‹";
             // 
             // _labelComposer
             // 
@@ -756,7 +756,7 @@ namespace TagEditor
             this._labelComposer.Name = "_labelComposer";
             this._labelComposer.Size = new System.Drawing.Size(97, 20);
             this._labelComposer.TabIndex = 15;
-            this._labelComposer.Text = "Композитор:";
+            this._labelComposer.Text = "РљРѕРјРїРѕР·РёС‚РѕСЂ:";
             this._labelComposer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // _textBoxComposer
@@ -791,7 +791,7 @@ namespace TagEditor
             this._buttonCancel.Name = "_buttonCancel";
             this._buttonCancel.Size = new System.Drawing.Size(96, 30);
             this._buttonCancel.TabIndex = 2;
-            this._buttonCancel.Text = "&Отменить";
+            this._buttonCancel.Text = "Р—Р°РєСЂС‹С‚СЊ";
             this._buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // ID3AdapterEdit
@@ -809,7 +809,7 @@ namespace TagEditor
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ID3AdapterEdit";
             this.ShowInTaskbar = false;
-            this.Text = "Редактор тегов";
+            this.Text = "Р РµРґР°РєС‚РѕСЂ";
             this.Load += new System.EventHandler(this.ID3Edit_Load);
             this._tabControlLyrics.ResumeLayout(false);
             this._tabPageGeneric.ResumeLayout(false);
